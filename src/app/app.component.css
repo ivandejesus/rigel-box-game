@@ -1,0 +1,18 @@
+.square {
+  height: 350px;
+  width: 300px;
+  background-color: #555;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.square:hover {
+	background: rgba(0,0,0,0);
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+
+h1 {
+  text-align: center;
+}
