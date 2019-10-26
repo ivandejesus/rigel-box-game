@@ -6,6 +6,13 @@
       <div class="col-md" (click)="getSelectedBoxAndStartTheGame(color)" class="col-md-6 square" [ngStyle]="{backgroundColor: color}"></div>
     </ng-container>
   </div>
+
+  <div *ngIf="rounds > 1">
+      <h3>Selected Color:  {{ previousSelectedColor }}</h3>
+  </div>
+  <div *ngIf="rounds == 1">
+    <h3>Please select a color to start the game...</h3>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
